@@ -7,7 +7,7 @@
     <string name="date_label">Дата</string>
     <string name="service_name_label">Имя сервиса</string>
     <string name="network_error">ошибка сети попробуйте позже!</string>
-    <string name="select_currency">Выберите валюту</string>
+    <string name="select_from_currency">Выберите валюту которую хотите продать</string>
+    <string name="select_to_currency">Выберите валюту которую хотите купить</string>
     <string name="zero">0</string>
-    <string name="result_unit">RUB</string>
 </resources>

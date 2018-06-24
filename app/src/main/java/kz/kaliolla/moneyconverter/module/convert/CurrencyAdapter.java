@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import java.util.List;
 
+import kz.kaliolla.moneyconverter.R;
 import kz.kaliolla.moneyconverter.model.Currency;
 
 public class CurrencyAdapter extends BaseAdapter{
@@ -44,11 +45,12 @@ public class CurrencyAdapter extends BaseAdapter{
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         if (convertView == null){
-            convertView = inflater.inflate(android.R.layout.simple_spinner_item, parent, false);
+            convertView = inflater.inflate(R.layout.currency_spinner_item, parent, false);
         }
         Currency currency = (Currency) getItem(position);
         if (currency != null) {
-            ((TextView) convertView.findViewById(android.R.id.text1)).setText(currency.getLabel());
+            ((TextView) convertView.findViewById(R.id.name)).setText(currency.getName());
+            ((TextView) convertView.findViewById(R.id.label)).setText(currency.getLabel());
         }
         return convertView;
     }
