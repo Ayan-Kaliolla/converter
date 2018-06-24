@@ -144,4 +144,13 @@ public class MainActivity extends AppCompatActivity implements ConvertView {
             errorMessage.setText(error);
         }
     }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        if (presenter != null) {
+            presenter.clear();
+            presenter = null;
+        }
+    }
 }

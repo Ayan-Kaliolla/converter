@@ -1,18 +1,14 @@
 package kz.kaliolla.moneyconverter.module.convert;
 
-import android.app.PendingIntent;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.IBinder;
-import android.telecom.ConnectionService;
 
 import kz.kaliolla.moneyconverter.R;
 import kz.kaliolla.moneyconverter.model.Data;
 import kz.kaliolla.moneyconverter.service.MoneyConverterService;
-import kz.kaliolla.moneyconverter.utils.DataUtil;
-import kz.kaliolla.moneyconverter.utils.NetworkUtil;
 
 class ConvertPresenterImpl implements ConvertPresenter, ServiceConnection {
     private ConvertView view;
